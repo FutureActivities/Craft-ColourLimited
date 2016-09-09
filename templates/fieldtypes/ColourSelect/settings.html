@@ -1,0 +1,36 @@
+{% import "_includes/forms" as forms %}
+
+{% set input %}
+	<table class="data">
+		{# for option in allOptions #}
+		
+		{% set total = savedOptions|length > 0 ? savedOptions|length : 2 %}
+		{% for i in 1..total %}
+			<tr class="clone">
+				<td>
+					{% set key = 'col'~i %}
+					{% set savedValue = savedOptions[key] is defined ? savedOptions[key] : '#ffffff' %}
+					{{ forms.color({
+						 id: key,
+						 name: 'options['~key~']',
+						 class: 'colour-select',
+						 value: savedValue
+					}) }}
+				</td>
+				<td class="code">
+					{{ savedValue }}
+				</td>
+				<td class="buttons">
+					{% if i > 1 %}<span class="remove-row delete icon"></span>{% endif %}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+{% endset %}
+
+{{ forms.field({
+	label: "Options"|t,
+	instructions: "Choose the available colour options."|t,
+}, input) }}
+
+<span id="addColourOption" class="btn add icon dashed">Add Colour</span>

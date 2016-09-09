@@ -1,0 +1,7 @@
+<div id="{{ id }}" class="btngroup big">
+	{% for key,colour in options %}
+		<div class="btn big {% if colour == value %} active{% endif %}" data-option="{{ colour }}"><span class="colour-selector" style="background-color:{{ colour }}"></span></div>
+	{% endfor %}
+</div>
+
+<input type="hidden" name="{{ name }}" value="{{ value }}">

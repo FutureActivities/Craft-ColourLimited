@@ -1,0 +1,9 @@
+
+{
+    "name": "futureactivities/craft-colourlimited",
+    "description": "Adds a new field type which allows selecting a colour limited to pre-defined options",
+    "type": "craft-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
