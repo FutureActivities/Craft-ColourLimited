@@ -9,3 +9,7 @@ Adds a new field type which allows selecting a colour limited to pre-defined opt
 ##Usage
 There will be a new field type called Colour Scheme, when you create
 your field with this type you can specify the available colours.
+
+![Creating a new field](/resources/screenshots/Create-Field.png?raw=true)
+
+![Using the field](/resources/screenshots/Field.png?raw=true)
