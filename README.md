@@ -7,7 +7,7 @@ Adds a new field type which allows selecting a colour limited to pre-defined opt
 3. Click Install
 
 ##Usage
-There will be a new field type called Colour Scheme, when you create
+There will be a new field type called Colour Limited, when you create
 your field with this type you can specify the available colours.
 
 ### Configuration
